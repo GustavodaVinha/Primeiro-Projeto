@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.CSS" media="screen">
+    <title>cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo"> Cadastro de Enfermagem</h1>
+        <P id="subtitulo"> Complete suas informações</P>
+        <br>  
+   </div>
+
+   <form>
+       <fieldset class="Grupo">
+           <div class="campo">
+               <label for="nome"><strong>Nome</strong></label>
+               <input type=“text” nome="nome" id="nome" required>
+           </div>
+
+           <div class="campo">
+               <label for="sobrenome"><strong>Sobrenome</strong></label>
+               <input type="text" nome="sobrenome" id="sobrenome" required>
+           </div>
+       </fieldset>
+
+    
+       <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required>
+    </div>
+
+       <div class="campo">
+           <label for="Qual área da Enfermagem você atua?"><strong>Qual área da Enfermagem você atua?</strong></label>
+           <label>
+               <input type="radio" nome="Enfermagem" value="Pronto-socorro">Pronto-socorro       
+           </label>
+           <label> 
+               <input type="radio" nome="Enfermagem" value="Unidade de Terapia Intensiva">Unidade de Terapia Intensiva
+           </label>
+           <label>
+               <input type="radio" nome="Enfemagem" value="Unidade de Internação">Unidade de Internação
+           </label>
+           <label>
+               <input type="radio" nome="Enfermagem" value="Centro Cirurgico/CME">Centro Cirurgico/CME
+           </label>
+           <label> 
+               <Input type="radio" nome="Enfermagem" value="Hemodinamica">Hemodinamica
+           </label>
+       </div>
+
+       <div class="campo">
+           <label><strong>Tempo de atuação</strong></label>
+           <select id="tempo de atuação">              
+                <option selected disable value="">Selecione</option>
+                <option>0 a 1 anos</option>
+                <option>2 a 3 anos</option>
+                <option>3 ou mais </option>
+            </select>
+       </div>
+
+       <fieldset class="grupo">
+           <div id="check">
+             <label><strong>Quais sistemas para anotação em prontuario utiliza</strong></label>
+             <input type="checkbox" id="saude1" nome="saude1" value="Tasy Java">
+             <label for="saude1">Tasy Java</label>
+             <input type="checkbox" id="saude2" nome="saude2" value="Tasy HTML">
+             <label for="saude2">Tasy HTML</label>
+             <input type="checkbox" id="saude3" nome="saude3" value="SOUL MV">
+             <label for="saude3">SOUL MV</label>
+             <input type="checkbox" id="saude4" nome="saude4" value="Outro">
+             <lable for="saude4">Outro</lable>
+           </div> 
+       </fieldset>
+
+       <div class="campo">
+           <br>
+           <label>Conte um pouco sobre suas experiencias:</label>
+           <textarea row="6" style="width: 26em" id="experiencia" nome="experiencia"></textarea>
+       </div>
+
+       <button class="botão" type="submit">Concluido</button>
+   </form>
+        
+    
+</body>
+</html>   
